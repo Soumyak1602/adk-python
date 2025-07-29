@@ -34,7 +34,7 @@ ISSUE_TITLE = os.getenv("ISSUE_TITLE")
 ISSUE_BODY = os.getenv("ISSUE_BODY")
 ISSUE_COUNT_TO_PROCESS = os.getenv("ISSUE_COUNT_TO_PROCESS")
 print(ISSUE_COUNT_TO_PROCESS, "HI")
-#print(ISSUE_COUNT_TO_BODY, "HELLO")
+print(ISSUE_BODY, "HELLO")
 print(os.getenv("PYTHON_PATH"))
 
 IS_INTERACTIVE = os.environ.get("INTERACTIVE", "1").lower() in ["true", "1"]
