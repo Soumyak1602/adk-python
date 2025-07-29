@@ -22,7 +22,8 @@ GITHUB_BASE_URL = "https://api.github.com"
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 if not GITHUB_TOKEN:
-  raise ValueError("GITHUB_TOKEN environment variable not set")
+  print("GITHUB_TOKEN", GITHUB_TOKEN)
+  #raise ValueError("GITHUB_TOKEN environment variable not set")
 
 OWNER = os.getenv("OWNER", "google")
 REPO = os.getenv("REPO", "adk-python")
@@ -32,5 +33,8 @@ ISSUE_NUMBER = os.getenv("ISSUE_NUMBER")
 ISSUE_TITLE = os.getenv("ISSUE_TITLE")
 ISSUE_BODY = os.getenv("ISSUE_BODY")
 ISSUE_COUNT_TO_PROCESS = os.getenv("ISSUE_COUNT_TO_PROCESS")
+print(ISSUE_COUNT_TO_PROCESS, "HI")
+print(ISSUE_COUNT_TO_BODY, "HELLO")
+print(os.getenv("PYTHON_PATH")
 
 IS_INTERACTIVE = os.environ.get("INTERACTIVE", "1").lower() in ["true", "1"]
